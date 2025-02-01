@@ -1,0 +1,5 @@
+root = true ; ele vai parar de ler os editor config onde tem esse root = true, caso contrario ele vai subindo as pastas e obtendo as configuracoes
+
+[*]
+index_style = space
+indent_size = 2
