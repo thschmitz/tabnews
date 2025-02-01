@@ -2,4 +2,4 @@ root = true ; ele vai parar de ler os editor config onde tem esse root = true, c
 
 [*]
 index_style = space
-indent_size = 2
+indent_size = 3
