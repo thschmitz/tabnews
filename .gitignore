@@ -3,3 +3,4 @@ node_modules
 .nvmrc
 conhecimento
 .env
+.package-lock.json
