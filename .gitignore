@@ -2,5 +2,4 @@ node_modules
 .next
 .nvmrc
 conhecimento
-.env
-.package-lock.json
+package-lock.json
