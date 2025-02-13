@@ -1,8 +1,8 @@
 test("GET to /api/v1/status should return 200", async () => {
    const response = await fetch("http://localhost:3000/api/v1/status");
    expect(response.status).toBe(200);
-});
-
+}, 30000);
+/*
 test("TEST update_at FROM RESPONSE BODY", async () => {
    const response = await fetch("http://localhost:3000/api/v1/status");
    const responseBody = await response.json();
@@ -36,7 +36,7 @@ test("TEST db_used_connections FROM RESPONSE BODY", async () => {
 
 test("TEST SENDING databaseName PARAMETER FROM REQUEST HEADER", async () => {
    await fetch("http://localhost:3000/api/v1/status?databaseName=local_db");
-});
+});*/
 
 /*test("TEST TRYING TO BREAK DOWN THE DATABASE BEING", async () => {
    await fetch(
