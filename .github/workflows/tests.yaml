@@ -11,9 +11,7 @@ jobs:
          - uses: actions/setup-node@v4
            with:
               node-version: "lts/hydrogen"
-         - uses: pnpm/action-setup@v4
-           with:
-              version: 10
 
-         - run: pnpm install --frozen-lockfile
-         - run: pnpm test
+         - run: npm ci
+
+         - run: npm test
