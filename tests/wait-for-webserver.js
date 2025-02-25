@@ -11,7 +11,6 @@ async function waitForNextServer() {
    async function awaitForWebService() {
       try {
          const response = await fetch("http://localhost:3000/api/v1/status");
-         await response.json();
          return response.status;
       } catch (error) {
          return -1;
