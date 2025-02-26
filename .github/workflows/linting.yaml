@@ -14,4 +14,4 @@ jobs:
            with:
               version: 10
          - run: pnpm install --no-frozen-lockfile
-         - run: pnpm run lint:prettier:check
+         - run: npm run lint:prettier:check
