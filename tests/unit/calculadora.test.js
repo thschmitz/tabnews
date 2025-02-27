@@ -1,3 +1,5 @@
+/* eslint-disable jest/valid-title */
+/* eslint-disable jest/expect-expect */
 const calculadora = require("../../models/calculadora.js");
 
 test("nome do teste", callbackFunction);
