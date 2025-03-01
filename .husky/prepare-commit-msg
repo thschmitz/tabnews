@@ -1,7 +1,6 @@
-npx --no -- commitlint --edit "$1"
-
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+
 
 # Section for git-secrets
 if ! command -v git-secrets &> /dev/null
@@ -14,5 +13,5 @@ fi
 git-secrets --register-aws > /dev/null
 
 echo "Running git-secrets..."
-# Scans the commit message.
-git-secrets --commit_msg_hook -- "$@"
+# Determines if merging in a commit will introduce tainted history.
+git-secrets --prepare_commit_msg_hook -- "$@"
