@@ -13,5 +13,5 @@ jobs:
          - uses: pnpm/action-setup@v4
            with:
               version: 10
-         - run: yarn install
-         - run: yarn test
+         - run: npm install
+         - run: npm test
