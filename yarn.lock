@@ -920,6 +920,11 @@
   resolved "https://registry.yarnpkg.com/@secretlint/resolver/-/resolver-9.2.0.tgz#bf3917d573b6c0d01f8ff56e2ab7f12765a6cc3a"
   integrity sha512-MDDBea3mVXuV8mxshl+sBopjRKALvOGwM44eizpL6PGJs76upIF+S2+MmTV8331peu03JDUtxkjni9jShnQK/g==
 
+"@secretlint/secretlint-rule-preset-recommend@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-9.2.0.tgz#746250e48b4ab1fb6d27a4ac55b1e4b8dffcab15"
+  integrity sha512-Q9lCCdrbXd8L+RutpEuaOsudshy31E9tAlgpSc1T6t0xY/Z0PXzCV4ej4hzm7oh3bYyyALSexNYnW9B3nUYo4Q==
+
 "@secretlint/source-creator@^9.2.0":
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/@secretlint/source-creator/-/source-creator-9.2.0.tgz#3f361608b6c77d5df503cf66ed085b4b1c91c6a7"

@@ -25,6 +25,7 @@
    "license": "MIT",
    "description": "",
    "dependencies": {
+      "@secretlint/secretlint-rule-preset-recommend": "^9.2.0",
       "async-retry": "^1.3.3",
       "dotenv": "^16.4.4",
       "dotenv-expand": "^11.0.6",
