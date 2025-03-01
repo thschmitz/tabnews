@@ -10,8 +10,8 @@
       "lint:prettier:check": "prettier --check .",
       "lint:prettier:fix": "prettier --write .",
       "lint:eslint:check": "next lint --dir .",
-      "concurrently": "concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"npm run wait-for-server && jest --runInBand\"",
-      "test": "npm run services:up && npm run concurrently",
+      "concurrently": "concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"yarn run wait-for-server && jest --runInBand\"",
+      "test": "yarn run services:up && yarn run concurrently",
       "test:watch": "jest --watchAll --runInBand",
       "localdb:connect": "psql --host=localhost --username=postgres --port=5432",
       "migration:create": "node-pg-migrate -m infra/migrations create",
@@ -35,6 +35,8 @@
       "react-dom": "^18.2.0"
    },
    "devDependencies": {
+      "@commitlint/cli": "19.3.0",
+      "@commitlint/config-conventional": "19.2.2",
       "concurrently": "^8.2.2",
       "eslint-config-prettier": "^9.1.0",
       "eslint-plugin-jest": "^28.6.0",
