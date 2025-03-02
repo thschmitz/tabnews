@@ -19,7 +19,7 @@
       "wait-for-postgres": "node infra/scripts/wait-for-postgres.js",
       "wait-for-server": "node tests/wait-for-webserver.js",
       "prepare": "husky && husky install",
-      "lint:secret:check": "npx secretlint"
+      "lint:secret:check": "npx secretlint \"**/*\""
    },
    "author": "",
    "license": "MIT",
