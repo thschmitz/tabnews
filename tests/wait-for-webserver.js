@@ -12,7 +12,7 @@ async function waitForNextServer() {
       try {
          const response = await fetch("http://localhost:3000/api/v1/status");
          return response.status;
-      } catch (error) {
+      } catch {
          return -1;
       }
    }
