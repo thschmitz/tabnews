@@ -16,8 +16,8 @@
       "lint:eslint:check": "next lint --dir .",
       "concurrently": "concurrently -n next,jest --hide next -k -s command-jest \"next dev\" \"yarn run wait-for-server && jest --runInBand\"",
       "test": "pnpm run services:up && pnpm run concurrently",
+      "test:watch": "jest --watchAll --runInBand --verbose",
       "posttest": "pnpm run services:stop",
-      "test:watch": "jest --watchAll --runInBand",
       "localdb:connect": "psql --host=localhost --username=postgres --port=5432",
       "wait-for-server": "node tests/wait-for-webserver.js",
       "prepare": "husky && husky install"
