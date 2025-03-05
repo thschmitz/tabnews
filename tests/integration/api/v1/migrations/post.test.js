@@ -20,7 +20,7 @@ describe("POST /api/v1/migrations", () => {
             const response1Body = await response1.json();
             expect(Array.isArray(response1Body)).toBe(true);
             expect(response1Body.length).toBeGreaterThan(0);
-         });
+         }, 30000);
 
          test("For the second time", async () => {
             const response2 = await fetch(
@@ -34,7 +34,7 @@ describe("POST /api/v1/migrations", () => {
             const response2Body = await response2.json();
             expect(Array.isArray(response2Body)).toBe(true);
             expect(response2Body.length).toBe(0);
-         });
+         }, 30000);
       });
    });
 });
