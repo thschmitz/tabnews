@@ -25,3 +25,9 @@ async function waitForNextServer() {
 
 process.stdout.write("\n\n🔴 Aguardando Servidor \n");
 waitForNextServer();
+
+const orchestrator = {
+   waitForNextServer,
+};
+
+export default orchestrator;
